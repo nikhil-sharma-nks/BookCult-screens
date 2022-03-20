@@ -17,9 +17,12 @@
   object-fit: contain;
   height: 20rem;
 }
-
+.vertical-card .card-info .button-container {
+  justify-content: center;
+}
 .vertical-card .card-info .button-container .btn {
   width: 100%;
+  text-align: center;
 }
 
 .vertical-card .card-info {
