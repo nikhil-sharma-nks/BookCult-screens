@@ -1,0 +1,12 @@
+.color-primary {
+  color: var(--primary-color);
+}
+.color-secondary {
+  color: var(--secondary-color);
+}
+.color-white {
+  color: var(--white);
+}
+.color-black {
+  color: var(--black);
+}

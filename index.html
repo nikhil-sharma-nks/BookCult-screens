@@ -20,25 +20,357 @@
   <body>
     <div class="navigationbar-container">
       <div class="navbar">
+        <a href="/">
         <div class="navbar-header">
-          <!-- <img src="../assets/company_logo.svg" class="navigation-logo" /> -->
           <div class="h2">BookCult</div>
         </div>
+      </a>
         <div class="navbar-search">
           <input type="text" class="form-control" placeholder="Search" />
         </div>
         <div class="navigation-buttons">
-          <button class="btn btn-primary">Login</button>
+          <a href="./pages/login.html">
+            <button class="btn btn-primary-outlined">Login</button>
+          </a>
+          <a href="./pages/cart.html">
           <div class="badge-container">
             <i class="fas fa-shopping-cart"></i>
             <span class="badge badge-icon">5</span>
           </div>
+        </a>
+        <a href="./pages/wishlist.html">
           <div class="badge-container">
             <i class="fas fa-heart"> </i>
             <span class="badge badge-icon">5</span>
           </div>
+        </a>
         </div>
       </div>
     </div>
+    <div class="welcome-screen">
+      <img src="./assets/hero-img.png" class="hero-img" />
+      <div class="intro-text">
+        <p class="text-xxl color-primary">Welcome To BookCult</p>
+        <p class="text-l text-centered mt-2">
+          If you are looking for all of your favourite books at one place, then
+          you've came to the right place
+        </p>
+        <p class="text-l text-centered mt-2">
+          Here you'll get amazing books at unbelievable price
+        </p>
+        <a href="./pages/products.html">
+          <button class="btn btn-primary btn-large">Explore</button>
+        </a>
+      </div>
+    </div>
+    <div class="h1 m-4 text-centered">Self-Help</div>
+    <main class="collections">
+         <a href="./pages/products.html">
+        <div class="card vertical-card pos-rel">
+          <div class="image-container">
+            <img
+              class="pic"
+              src="./assets/books/think-like-a-monk.webp"
+              alt=""
+            />
+            <div class="card-tag">Bestseller</div>
+
+          </div>
+          <div class="card-info">
+            <div class="card-header">Think Like A Monk</div>
+            <div class="card-descripion mt-1">Jay Shetty</div>
+            <div class="price-container my-2">
+              <div class="current-price h3">₹320</div>
+              <div class="original-price h3">₹450</div>
+              <div class="discount-tag">28% off</div>
+            </div>
+            <div class="button-container">
+              <a class="btn btn-primary">
+                <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img class="pic" src="./assets/books/ikigai.webp" alt="" />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Ikigai</div>
+          <div class="card-descripion mt-1">Hector Gracia</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹399</div>
+            <div class="original-price h3">₹699</div>
+            <div class="discount-tag">42% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/the-psychology-of-money.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Psycology Of Money</div>
+          <div class="card-descripion mt-1">Morgan Housel</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹221</div>
+            <div class="original-price h3">₹295</div>
+            <div class="discount-tag">25% off</div>
+          </div>
+          <div class="button-container">
+            <a class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/start-with-why-original.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Start With Why</div>
+          <div class="card-descripion mt-1">Simon Sinek</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹338</div>
+            <div class="original-price h3">₹599</div>
+            <div class="discount-tag">43% off</div>
+          </div>
+          <div class="button-container">
+            <a class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+    </main>
+    <div class="h1 m-4 text-centered">Non-Fictions</div>
+    <main class="collections">
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img class="pic" src="./assets/books/my-journey.webp" alt="" />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">My Journey</div>
+          <div class="card-descripion mt-1">APJ Abdul Kalam</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹320</div>
+            <div class="original-price h3">₹450</div>
+            <div class="discount-tag">28% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        </a>
+      </div>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img class="pic" src="./assets/books/shoe-dog.webp" alt="" />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Show Dog</div>
+          <div class="card-descripion mt-1">Knight Phil</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹399</div>
+            <div class="original-price h3">₹699</div>
+            <div class="discount-tag">42% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/the-power-of-your-subconscious-mind.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Power Of Your Subconscious Mind</div>
+          <div class="card-descripion mt-1">Murphy Joseph</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹221</div>
+            <div class="original-price h3">₹295</div>
+            <div class="discount-tag">25% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas 
+              </a>fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/think-and-grow-rich.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Think And Grow Rick</div>
+          <div class="card-descripion mt-1">Napoleon Hil</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹338</div>
+            <div class="original-price h3">₹599</div>
+            <div class="discount-tag">43% off</div>
+          </div>
+          <div class="button-container">
+            <a class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+       </a>
+    </main>
+    <div class="h1 m-4 text-centered">Literature</div>
+    <main class="collections">
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img class="pic" src="./assets/books/the-archer.webp" alt="" />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">The Archer</div>
+          <div class="card-descripion mt-1">Paulo Coelho</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹320</div>
+            <div class="original-price h3">₹450</div>
+            <div class="discount-tag">28% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        </a>
+      </div>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img class="pic" src="./assets/books/the-kite-runner.webp" alt="" />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Kite Runner</div>
+          <div class="card-descripion mt-1">Khaled Hosseni</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹399</div>
+            <div class="original-price h3">₹699</div>
+            <div class="discount-tag">42% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/three-thousand-stitches.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">Three Thousand Stitches</div>
+          <div class="card-descripion mt-1">Sudha Murty</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹221</div>
+            <div class="original-price h3">₹295</div>
+            <div class="discount-tag">25% off</div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">
+              <i class="fas 
+              </a>fa-shopping-cart mr-1"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      </a>
+       <a href="./pages/products.html">
+      <div class="card vertical-card pos-rel">
+        <div class="image-container">
+          <img
+            class="pic"
+            src="./assets/books/the-great-train-journey.webp"
+            alt=""
+          />
+          <div class="card-tag">Bestseller</div>
+        </div>
+        <div class="card-info">
+          <div class="card-header">The Great Train Journey</div>
+          <div class="card-descripion mt-1">Ruskin Bond</div>
+          <div class="price-container my-2">
+            <div class="current-price h3">₹338</div>
+            <div class="original-price h3">₹599</div>
+            <div class="discount-tag">43% off</div>
+          </div>
+          <div class="button-container">
+            <a class="btn btn-primary">
+              <i class="fas fa-shopping-cart mr-1"></i> Add To Cart
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+       </a>
+    </main>
   </body>
 </html>
