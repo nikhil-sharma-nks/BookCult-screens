@@ -4,6 +4,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
+  height: fit-content;
 }
 .vertical-card:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
@@ -33,4 +34,44 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 1.3rem;
+}
+
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.product-listing .filter-container {
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 2rem;
+  overflow: auto;
+  height: calc(100vh - 4rem);
+  position: sticky;
+  top: 0;
+}
+
+.product-listing .products-container {
+  grid-column: 3 / span 8;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-listing .filter-container .filter-clear-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-listing .filter-container .price-range-container .price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-listing .filter-container .price-range-container input {
+  width: 100%;
 }
