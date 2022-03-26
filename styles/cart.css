@@ -1,0 +1,27 @@
+.cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cart-card .quantity-container {
+  margin: auto 0;
+}
+
+.cart-card .quantity-container input {
+  padding: 10px;
+  width: 5rem;
+  text-align: center;
+}
+
+.cart-container .cart-price-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--black);
+  padding: 1rem;
+  width: 300px;
+}
+.cart-container .cart-price-container .price-item {
+  display: flex;
+  justify-content: space-between;
+}
