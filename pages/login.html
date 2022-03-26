@@ -4,7 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login | BookCult</title>
+    <link
+      rel="stylesheet"
+      href="https://silk-ui.netlify.app/styles/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="navigationbar-container">
+      <div class="navbar">
+        <a href="/">
+          <div class="navbar-header">
+            <div class="h2">BookCult</div>
+          </div>
+        </a>
+        <div class="navbar-search">
+          <input type="text" class="form-control" placeholder="Search" />
+        </div>
+        <div class="navigation-buttons">
+          <a href="./login.html">
+            <button class="btn btn-primary-outlined">Login</button>
+          </a>
+          <a href="./cart.html">
+            <div class="badge-container">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge badge-icon">5</span>
+            </div>
+          </a>
+          <a href="./wishlist.html">
+            <div class="badge-container">
+              <i class="fas fa-heart"> </i>
+              <span class="badge badge-icon">5</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="login-page-container centered-container">
+      <div class="form-group">
+        <p class="text-xxl text-centered color-primary">Login</p>
+        <label for="exampleInputText" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail"
+          placeholder="Enter your email"
+        />
+        <label for="exampleInputPassword" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword"
+          placeholder="Enter your password"
+        />
+
+        <div class="form-options-container mt-4">
+          <div>
+            <input
+              type="checkbox"
+              id="rememberMe"
+              name="subscribe"
+              value="newsletter"
+            />
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <div>
+            <a href="">Forget Password</a>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3" type="submit">Login</button>
+        <div class="mt-3 text-centered">
+          <a href="./signup.html" class="sign-up-link"
+            >Don't Have An Account? Create one!</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
