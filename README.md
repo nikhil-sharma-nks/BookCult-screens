@@ -3,6 +3,7 @@ BookCult is an e-commerce for books!
 # [Live Link](https://bookcult-screens.netlify.app/)
 
 # [Demo](https://www.loom.com/share/2697b30e3e5348fcbb3b68fb10ea5485)
+https://www.loom.com/share/2697b30e3e5348fcbb3b68fb10ea5485
 
 ## Screens
 - ### [Homepage](https://bookcult-screens.netlify.app/)
