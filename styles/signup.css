@@ -1,0 +1,13 @@
+.signup-page-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.signup-page-container button {
+  width: 100%;
+}
+
+.signup-page-container a {
+  color: var(--primary-color);
+}

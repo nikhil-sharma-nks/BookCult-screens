@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | BookCult</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://silk-ui.netlify.app/styles/components.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="navigationbar-container">
+    <div class="navbar">
+      <a href="/">
+        <div class="navbar-header">
+          <div class="h2">BookCult</div>
+        </div>
+      </a>
+      <div class="navbar-search">
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+      <div class="navigation-buttons">
+        <a href="./login.html">
+          <button class="btn btn-primary-outlined">Login</button>
+        </a>
+        <a href="./cart.html">
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge badge-icon">5</span>
+          </div>
+        </a>
+        <a href="./wishlist.html">
+          <div class="badge-container">
+            <i class="fas fa-heart"> </i>
+            <span class="badge badge-icon">5</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="text-xxl text-centered color-primary my-4">My Cart</p>
+  <main class="cart-container">
+    <div class="card horizontal-card pos-rel cart-card">
+      <div class="image-container">
+        <img class="pic" src="../assets/books/think-like-a-monk.webp" alt="" />
+      </div>
+      <div class="card-info">
+        <div class="card-header h3">Think Like A Monk</div>
+        <div class="card-descripion mt-1">Jay Shetty
+        </div>
+        <div class="price-container my-2">
+          <div class="current-price h3">₹320</div>
+          <div class="original-price h3">₹450</div>
+          <div class="discount-tag">42% off</div>
+        </div>
+        <div class="quantity-container">
+          <button class="btn btn-primary-outlined btn-floating">
+            <i class="fas fa-minus "></i>
+          </button>
+          <input type="number" default="3" min="1" value="1" class="quantity-input" />
+          <button class="btn btn-primary-outlined btn-floating">
+            <i class="fas fa-plus "></i>
+          </button>
+
+
+        </div>
+        <div class="button-container">
+          <button class="btn btn-error-outlined">
+            Remove From Cart
+          </button>
+          <button class="btn btn-primary-outlined mt-1">
+            <i class="far fa-heart mr-1"></i>Add to Wishlist
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-price-container">
+      <p class="h3">PRICE DETAILS</p>
+      <hr>
+      <div class="price-item mt-2">
+        <p>Price (1 Item)</p>
+        <p>₹320</p>
+      </div>
+      <div class="price-item mt-2">
+        <p>Original Price </p>
+        <p>₹450</p>
+      </div>
+      <div class="price-item mt-2">
+        <p>Discount</p>
+        <p>- ₹130</p>
+      </div>
+      <div class="price-item my-2">
+        <p>Delivery Charges</p>
+        <p>Free</p>
+      </div>
+      <hr>
+      <div class="price-item my-2">
+        <p class="h3">Total</p>
+        <p class="h3">₹320</p>
+      </div>
+      <hr>
+      <button class="btn btn-primary mt-auto">
+        <i class="fas fa-shopping-cart mr-1"></i> Place Order
+      </button>
+    </div>
+
+  </main>
+</body>
+
 </html>
