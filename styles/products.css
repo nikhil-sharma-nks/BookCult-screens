@@ -4,8 +4,10 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
+  height: fit-content;
 }
-.vertical-card:hover {
+.vertical-card:hover,
+.horizontal-card:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -44,4 +46,70 @@
   left: 14.5rem;
   top: 10px;
   background-color: rgb(248, 187, 187);
+}
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.product-listing .filter-container {
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 2rem;
+  overflow: auto;
+  height: calc(100vh - 4rem);
+  position: sticky;
+  top: 0;
+}
+
+.product-listing .products-container {
+  grid-column: 3 / span 8;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-listing .filter-container .filter-clear-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-listing .filter-container .price-range-container .price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-listing .filter-container .price-range-container input {
+  width: 100%;
+
+.horizontal-card {
+  width: fit-content;
+}
+.horizontal-card:hover {
+  cursor: pointer;
+}
+
+.horizontal-card .image-container .pic {
+  object-fit: contain;
+  /* width: 15rem; */
+  width: fit-content;
+  padding: 1rem;
+}
+
+.horizontal-card .card-info {
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-card .card-info .button-container {
+  margin: unset;
+  margin-top: auto;
+}
+.horizontal-card .card-info .btn-floating {
+  padding: 10px;
 }
